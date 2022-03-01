@@ -396,3 +396,34 @@ a:hover {
     background: radial-gradient(var(--dark-green) 10%, #787c7804);
     transform: scale(1.1);
 }
+
+/*FOOTER*/
+.footer {
+    background-color: var(--dark-green);
+}
+
+.footer .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 120px;
+    font-size: 28px;
+    color: white;
+}
+
+.footer__github-logo {
+    display: flex;
+    align-items: center;
+    gap: 0 10px;
+    color: white;
+}
+
+.footer__github-logo,
+.footer__rss-logo {
+    transition: 0.5s;
+}
+
+.footer__github-logo:hover,
+.footer__rss-logo:hover {
+    filter: invert(49%) sepia(7%) saturate(173%) hue-rotate(71deg) brightness(97%) contrast(90%);
+}
