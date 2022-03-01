@@ -256,3 +256,28 @@ a:hover {
 .language-card:hover h3 {
     color: var(--black);
 }
+
+/*ADDITIONAL*/
+.additional-section {
+    position: relative;
+}
+
+.additional__background {
+    top: calc(50% + 60.5px);
+    left: calc(50% - 100px / 2);
+    box-shadow: 0 0 125px 150px #58C69E4D;
+}
+
+.additional__list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 262px;
+    margin: 0 auto;
+    font-size: 18px;
+}
+
+.hobbies__list {
+    list-style-type: disc;
+    padding-left: 50px;
+}
