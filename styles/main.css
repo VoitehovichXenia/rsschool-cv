@@ -230,3 +230,29 @@ a:hover {
     left: calc(50% - 100px / 2);
     box-shadow: 0 0 175px 200px #58C69E4D;
 }
+
+/*LANGUAGES*/
+.language__list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.language-card {
+    width: 420px;
+    font-size: 18px;
+    transition: 0.5s;
+}
+
+.language-card:hover {
+    background: var(--white);
+}
+
+.language-card h3 {
+    color: var(--dark-green);
+    transition: 0.5s;
+}
+
+.language-card:hover h3 {
+    color: var(--black);
+}
