@@ -72,6 +72,13 @@ a:hover {
     background: var(--black);
 }
 
+.border-block {
+    margin: 0 auto;
+    padding: 15px 20px;
+    background: var(--light-green);
+    border-left: 5px solid var(--dark-green);
+}
+
 /*HEADER*/
 .header .container {
     display: flex;
@@ -153,4 +160,37 @@ a:hover {
 .right-column {
     flex-grow: 2;
     padding: 0 33px;
+}
+
+/*CONTACTS SECTION*/
+.contacts__list {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    width: 370px;
+}
+
+.contacts__list-item {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.contacts__link:hover {
+    color: var(--dark-green);
+}
+
+.contacts__link::after {
+    display: block;
+    content: '';
+    border-radius: 0.7px;
+    width: auto;
+    height: 1px;
+    background: var(--dark-green);
+    opacity: 0;
+    transition: 0.5s;
+}
+
+.contacts__list-item:hover .contacts__link::after {
+    opacity: 1;
 }
