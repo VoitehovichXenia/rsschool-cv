@@ -62,6 +62,23 @@ function isPrime(num) {
 - Faculty: General medicine
 
 ## Working experience
+##### 02/2022 – 02/2022 RS School (pet project)
+**Project name**: [Snake Game](https://rolling-scopes-school.github.io/voitehovichxenia-JSFEPRESCHOOL/random-game/)
+- Role: Front-end Developer
+- Tools & Technologies: VanillaJS(ES6), HTML5, CSS, canvas
+- **Project description**: Classic snake game, with some sad music.
+
+##### 02/2022 – 02/2022 RS School (pet project)
+**Project name**: [Movie App](https://rolling-scopes-school.github.io/voitehovichxenia-JSFEPRESCHOOL/movie-app/)
+- Role: Front-end Developer
+- Tools & Technologies: VanillaJS(ES6), HTML5, CSS.
+- **Project description**: Service for searching movie titles.
+
+##### 09/2019 – 01/2020 IT Academy (pet project)
+**Project name**: [Creatinine-Calculator](https://github.com/VoitehovichXenia/Creatinine-Calculator)
+- Role: Front-end Developer
+- Tools & Technologies: VanillaJS(ES6), HTML5, LESS, Node.js, Express.js
+- **Project description**: Creatinine-Calculator is a single page application, which aimed at helping you with calculating the glomerular filtration rate based on creatinine clearance, what is really important for prescription the right dose of drugs.
 
 ## Languages
 
