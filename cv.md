@@ -23,6 +23,13 @@ My career plans also iclude:
 During this year I wish to become a **Junior front-end developer**.
 
 ## Professional skills
+- **JavaScript versions**: ECMAScript 5-6
+- **Frameworks/Libraries**: ReactJS (basics)
+- **Backend experience**: Node.js (basics), Express.js(basics)
+- **IDE**: WebStorm, VisualStudio
+- **OS platforms**: Windows
+- **Version control systems**: Git(GitHub)
+- **Additional technologies**: Adobe Photoshop, Figma
 
 ## Code example
 
