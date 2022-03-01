@@ -365,3 +365,34 @@ a:hover {
     color: #9863bb;
     font-weight: 700;
 }
+
+/*WORK EXPERIENCE*/
+.experience__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-bottom: 40px;
+}
+
+.experience__card {
+    max-width: 690px;
+    border-radius: 20px;
+    padding: 50px;
+    margin: 0 auto;
+    font-size: 20px;
+    background: radial-gradient(#787C78 10%, #787c7804);
+    transition: 0.5s;
+}
+
+.experience__description {
+    margin-top: 35px;
+    margin-left: 70px;
+}
+
+.experience__link:hover .experience__card{
+    background: radial-gradient(var(--dark-green) 10%, #787c7804);
+    transform: scale(1.1);
+}
