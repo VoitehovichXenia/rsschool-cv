@@ -88,3 +88,12 @@ Able to speak, read technical literature; carry on business correspondence, unde
 - ##### Russian - Speak fluently
 
 ## Additional information
+
+**Driver licence**: No.
+
+**Willing to relocate**: Sure.
+
+**Hobbies**: 
+- Photography (especially analog),
+- Art (history, techniques),
+- Psychology and psychotherapy (gestalt, CBT).
