@@ -45,6 +45,21 @@ function isPrime(num) {
 ```
 
 ## Education
+##### 08/2021 – present Republican scientific and practical center for mental health***
+- Specialization: Psychiatry, narcology (internship)
+
+##### 12/2021 - 02/2022 Rolling Scopes School
+- Specialization: JS/Front-end developer stage 0
+
+##### 10/2021 – 10/2021 WayUp
+- Specialization: Web design (basics)
+
+##### 09/2019 – 01/2020 IT Academy
+- Specialization: Web application development with JavaScript
+
+##### 09/2015 – 06/2021 Belarusian State Medical University
+- Specialization: Psychiatry, narcology and psychotherapy
+- Faculty: General medicine
 
 ## Working experience
 
