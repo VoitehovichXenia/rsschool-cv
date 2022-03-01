@@ -176,6 +176,17 @@
             </section>
             <section id="code">
                 <h2 class="section-heading">Code example</h2>
+                <pre class="code-block"><code>
+        <span class="code__function">function</span> <span class="code__function-name">isPrime</span> (<span class="code__variable">num</span>) {    
+            <span class="code__function">if</span> (<span class="code__variable">num</span> &lt; 2) <span class="code__function">return</span> false;
+
+                <span class="code__function">for</span>  (<span class="code__function">let</span>  <span class="code__variable">i</span> = 2; <span class="code__variable">i</span> &lt;= <span class="code__function">Math.sqrt</span>(<span class="code__variable">num</span>); <span class="code__variable">i</span>++) {
+                    <span class="code__function">if</span> (<span class="code__variable">num</span> % <span class="code__variable">i</span>) <span class="code__function">return</span> false;  
+                }
+
+                <span class="code__function">return</span> true;  
+        }
+                </code></pre>
             </section>
         </div>
     </div>
