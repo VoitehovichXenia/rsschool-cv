@@ -81,5 +81,10 @@ function isPrime(num) {
 - **Project description**: Creatinine-Calculator is a single page application, which aimed at helping you with calculating the glomerular filtration rate based on creatinine clearance, what is really important for prescription the right dose of drugs.
 
 ## Languages
+- ##### English – Pre-Intermediate (B1)
+According to the test at the EPAM training portal.
+Able to speak, read technical literature; carry on business correspondence, understand content of audio and video materials according to the level.
+- ##### Belarussian - Native speaker
+- ##### Russian - Speak fluently
 
 ## Additional information
