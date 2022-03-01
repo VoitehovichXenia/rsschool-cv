@@ -79,6 +79,14 @@ a:hover {
     border-left: 5px solid var(--dark-green);
 }
 
+.blur-background {
+    position: absolute;
+    z-index: -1;
+    width: 0;
+    height: 0;
+    border-radius: 100%;
+}
+
 /*HEADER*/
 .header .container {
     display: flex;
@@ -193,4 +201,32 @@ a:hover {
 
 .contacts__list-item:hover .contacts__link::after {
     opacity: 1;
+}
+
+/*SKILLS*/
+.skills-section {
+    position: relative;
+}
+
+.skills__table {
+    margin: 0 auto;
+    width: 460px;
+}
+
+.skill-name {
+    width: 54%;
+    padding: 2px 0;
+    font-weight: 700;
+    text-align: right;
+    vertical-align: top;
+}
+
+.skill-description {
+    padding: 2px 0 2px 25px;
+}
+
+.skills__background {
+    top: calc(50% + 60.5px);
+    left: calc(50% - 100px / 2);
+    box-shadow: 0 0 175px 200px #58C69E4D;
 }
