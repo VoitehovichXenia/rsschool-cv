@@ -299,3 +299,39 @@ a:hover {
     list-style-type: disc;
     font-size: 18px;    
 }
+
+/*EDUCATION*/
+.education-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.education-card {
+    width: fit-content;
+    padding: 20px 40px;
+    border-radius: 10px;
+    font-size: 18px;
+    background: var(--gray);
+    transition: 0.5s;
+}
+
+.education-card:hover {
+    color: var(--white);
+    background: var(--dark-gray);
+}
+
+.education__when,
+.education__where {
+    font-size: 20px;
+}
+
+.education__specialization {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.education__faculty {
+    margin-left: 30px;
+}
