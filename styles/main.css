@@ -281,3 +281,21 @@ a:hover {
     list-style-type: disc;
     padding-left: 50px;
 }
+
+/*ABOUT*/
+.about__text {
+    margin: 0 auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+.about__list-heading {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.about__list {
+    margin-left: 50px;
+    list-style-type: disc;
+    font-size: 18px;    
+}
