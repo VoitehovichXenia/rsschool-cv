@@ -87,6 +87,63 @@ a:hover {
     border-radius: 100%;
 }
 
+.body-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    z-index: -1000;
+    width: 100%;
+    height: 100%;
+}
+
+.circle-1,
+.circle-2,
+.circle-3,
+.circle-4,
+.circle-5{
+  height: 1px;
+  width: 1px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: var(--dark-green);
+  border-radius: 50%;
+  transform: translate3d(-50%, 50%, 0);
+  animation: ripple 16s ease-out infinite;
+}
+
+.circle-1{
+  animation-delay: 0;
+}
+
+.circle-2{
+  animation-delay: 3s;
+}
+
+.circle-3{
+  animation-delay: 6s;
+}
+
+.circle-4{
+  animation-delay: 9s;
+}
+
+.circle-5{
+  animation-delay: 12s;
+}
+
+@keyframes ripple{
+  0%{
+    transform: translate3d(-50%, 50%, 0) scale(0);
+    opacity: .33;
+  }
+  100%{
+    transform: translate3d(-50%, 50%, 0) scale(3000);
+    opacity: 0;
+  }
+}
+
 /*HEADER*/
 .header .container {
     display: flex;
