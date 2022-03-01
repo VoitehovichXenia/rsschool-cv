@@ -32,6 +32,17 @@ During this year I wish to become a **Junior front-end developer**.
 - **Additional technologies**: Adobe Photoshop, Figma
 
 ## Code example
+```
+function isPrime(num) {
+    if (num < 2) return false;
+  
+    for (let i = 2; i <= Math.sqrt(num); i++) {
+        if (num % i === 0) return false;
+    }
+  
+    return true;
+}
+```
 
 ## Education
 
