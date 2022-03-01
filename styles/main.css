@@ -10,8 +10,10 @@
     --shadow: 0 0 1.5rem rgba(69, 73, 78, 0.3);
     --font-regular: 'Open Sans', sans-serif;
     --font-headings: 'Montserrat', sans-serif;
-    --font-size-regular: 20px;
-    --photo: url(../assets/img/photo.jpg);
+    --font-size-regular: 18px;
+    --photo: url(../assets/img/photo.jpeg);
+    --github-logo: url(../assets/svg/github-logo.svg);
+    --rss-logo: url(../assets/svg/rs-logo.svg);
 }
 
 /*COMMON styles*/
@@ -33,7 +35,10 @@ body {
 }
 
 .container {
+    position: relative;
     max-width: 1440px;
+    margin: 0 auto;
+    overflow: hidden;
 }
 
 ul {
@@ -53,11 +58,11 @@ a:hover {
 
 .section-heading {  
     width: fit-content;
-    margin: 90px auto 0;
+    margin: 5rem auto 0;
     font-weight: 300;
     text-align: center;
     text-transform: uppercase;
-    letter-spacing: .7rem;
+    letter-spacing: .78rem;
 }
 
 .section-heading::after {
@@ -90,11 +95,9 @@ a:hover {
 .body-background {
     position: absolute;
     top: 0;
-    left: 0;
-    bottom: 0;
+    right: 0;
     z-index: -1000;
     width: 100%;
-    height: 100%;
 }
 
 .circle-1,
@@ -102,19 +105,14 @@ a:hover {
 .circle-3,
 .circle-4,
 .circle-5{
-  height: 1px;
-  width: 1px;
+  height: 1.5px;
+  width: 1.5px;
   position: absolute;
   right: 0;
   top: 0;
   background-color: var(--dark-green);
-  border-radius: 50%;
-  transform: translate3d(-50%, 50%, 0);
+  border-radius: 100vmin;
   animation: ripple 16s ease-out infinite;
-}
-
-.circle-1{
-  animation-delay: 0;
 }
 
 .circle-2{
@@ -135,11 +133,11 @@ a:hover {
 
 @keyframes ripple{
   0%{
-    transform: translate3d(-50%, 50%, 0) scale(0);
-    opacity: .33;
+    transform: scale(0);
+    opacity: .3;
   }
   100%{
-    transform: translate3d(-50%, 50%, 0) scale(3000);
+    transform: scale(1000);
     opacity: 0;
   }
 }
@@ -149,33 +147,37 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 80px 0 0;    
+    padding: 5rem 0 0;    
 }
 
 .header__photo {
-    width: 265px;
+    width: 258px;
     height: 265px;
+    border-radius: 30px;
     background-image: var(--photo);
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .header__inner-container {
-    margin-left: 70px;
+    margin: 0 0 0 70px;
 }
 
 .header__name,
 .header__position {
     text-transform: uppercase;
-    letter-spacing: 0.44rem;
+    letter-spacing: 0.49rem;
 }
 
 .header__name {
     margin: 30px 0 20px;
-    font-size: 1.8rem;
+    font-size: 2rem;
     font-weight: 700;
 }
 
 .header__position {
-    font-size: 1.3rem;
+    font-size: 1.4rem;
     font-weight: 500;
 }
 
@@ -183,14 +185,12 @@ a:hover {
 .menu__list {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 40px;
-    height: 40px;
+    gap: 2.2rem;
 }
 
 .menu__list-item {
     display: block;
-    font-size: var(--font-size-regular);
+    font-size: 1.1rem;
 }
 
 .menu__list-item:hover {
@@ -267,7 +267,7 @@ a:hover {
 
 .skills__table {
     margin: 0 auto;
-    width: 460px;
+    max-width: 460px;
 }
 
 .skill-name {
@@ -284,8 +284,8 @@ a:hover {
 
 .skills__background {
     top: calc(50% + 60.5px);
-    left: calc(50% - 100px / 2);
-    box-shadow: 0 0 175px 200px #58C69E4D;
+    left: calc(50% - 11.1rem / 4);
+    box-shadow: 0 0 9.72rem 11.1rem #58C69E4D;
 }
 
 /*LANGUAGES*/
@@ -293,11 +293,13 @@ a:hover {
     display: flex;
     flex-direction: column;
     gap: 20px;
+    max-width: 420px;
+    margin: 0 auto;
 }
 
 .language-card {
-    width: 420px;
-    font-size: 18px;
+    width: 100%;
+    font-size: 1rem;
     transition: 0.5s;
 }
 
@@ -306,6 +308,7 @@ a:hover {
 }
 
 .language-card h3 {
+    font-size: 1.1rem;
     color: var(--dark-green);
     transition: 0.5s;
 }
@@ -321,8 +324,8 @@ a:hover {
 
 .additional__background {
     top: calc(50% + 60.5px);
-    left: calc(50% - 100px / 2);
-    box-shadow: 0 0 125px 150px #58C69E4D;
+    left: calc(50% - 8.33rem / 4);
+    box-shadow: 0 0 6.94rem 8.33rem #58C69E4D;
 }
 
 .additional__list {
@@ -331,7 +334,7 @@ a:hover {
     gap: 10px;
     width: 262px;
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .hobbies__list {
@@ -342,19 +345,19 @@ a:hover {
 /*ABOUT*/
 .about__text {
     margin: 0 auto;
-    font-size: 18px;
+    font-size: 1 rem;
     text-align: center;
 }
 
 .about__list-heading {
     margin-top: 10px;
-    font-size: 18px;
+    font-size: 1rem;
 }
 
 .about__list {
     margin-left: 50px;
     list-style-type: disc;
-    font-size: 18px;    
+    font-size: 1rem;    
 }
 
 /*EDUCATION*/
@@ -369,8 +372,8 @@ a:hover {
     width: fit-content;
     padding: 20px 40px;
     border-radius: 10px;
-    font-size: 18px;
-    background: var(--gray);
+    font-size: 1rem;
+    background: #D3D4D3;
     transition: 0.5s;
 }
 
@@ -381,7 +384,7 @@ a:hover {
 
 .education__when,
 .education__where {
-    font-size: 20px;
+    font-size: 1.1rem;
 }
 
 .education__specialization {
@@ -395,11 +398,11 @@ a:hover {
 
 /*CODE*/
 .code-block { 
-    width: 600px;
+    max-width: 600px;
     margin: 0 auto;
-    border-radius: 0.5rem;
+    border-radius: 0.56rem;
     font-family: 'Roboto Mono', monospace;
-    font-size: 16px;
+    font-size: 0.9rem;
     letter-spacing: 2px;
     background: rgba(0, 0, 0, 0.2);
     transition: 0.5s;
@@ -437,16 +440,16 @@ a:hover {
 .experience__card {
     max-width: 690px;
     border-radius: 20px;
-    padding: 50px;
+    padding: 2.78rem;
     margin: 0 auto;
-    font-size: 20px;
+    font-size: 1.1rem;
     background: radial-gradient(#787C78 10%, #787c7804);
     transition: 0.5s;
 }
 
 .experience__description {
     margin-top: 35px;
-    margin-left: 70px;
+    margin-left: 3.89rem;
 }
 
 .experience__link:hover .experience__card{
@@ -463,8 +466,8 @@ a:hover {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 60px 120px;
-    font-size: 28px;
+    padding: 3.33rem 6.67rem;
+    font-size: 1.56rem;
     color: white;
 }
 
@@ -483,4 +486,90 @@ a:hover {
 .footer__github-logo:hover,
 .footer__rss-logo:hover {
     filter: invert(49%) sepia(7%) saturate(173%) hue-rotate(71deg) brightness(97%) contrast(90%);
+}
+
+.github-logo,
+.rss-logo {
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.github-logo {
+    background-image: var(--github-logo);
+    width: 4.44rem;
+    height: 4.44rem;
+}
+
+.rss-logo {
+    background-image: var(--rss-logo);
+    width: 9.67rem;
+    height: 3.5rem;
+}
+
+@media (max-width: 1310px) {
+    /*HEADER and NAV*/
+    .header .container {
+        flex-direction: column;
+    }
+   
+    .header__inner-container {
+       margin: 0 1rem;
+    }
+
+    .header__photo {
+        margin-bottom: 1rem;
+    }
+
+    .menu__list {
+        justify-content: center;
+    }
+
+    .header__name,
+    .header__position {
+        text-align: center;
+    }
+
+    /*MAIN*/
+    .columns {
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer .container {
+        flex-direction: column;
+        gap: 1rem;
+    }
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 16px;
+    }
+
+    .experience__card {
+        margin: 0 1rem;
+    }
+}
+
+@media (max-width: 500px) {
+    html {
+        font-size: 13px;
+    }
+    
+    .footer .container {
+        padding: 3rem 0;
+    }
+}
+
+@media (max-width: 450px) {
+    .code-block {
+        overflow-x: scroll;
+    }
+}
+
+@media (max-width: 350px) {
+    html {
+        font-size: 12px;
+    }
 }
