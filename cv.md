@@ -1,4 +1,5 @@
 # Voitehovich Xenia
+![Photo](assets/img/photo.jpg)
 
 # Trainee/Junior Front-end Developer
 
