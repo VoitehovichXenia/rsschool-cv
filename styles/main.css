@@ -161,10 +161,15 @@ button:focus {
     background-size: contain;
     transition: 0.5s;
     visibility: hidden;
+    transition: 0.5s;
 }
 
 .scroll-up.visible {
     visibility: visible;
+}
+
+.scroll-up.visible:hover {
+    transform: scale(1.2);
 }
 
 /*HEADER*/
